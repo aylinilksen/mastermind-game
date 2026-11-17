@@ -1,0 +1,111 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 430px;
+    padding: 30px 22px;
+    border-radius: 22px;
+    background: #ffffff12;
+    border: 1px solid #ffffff25;
+    text-align: center;
+}
+
+h1 {
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+.subtitle {
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+.settings {
+    display: grid;
+    gap: 15px;
+}
+
+select, input, button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+button {
+    background: #38bdf8;
+    color: #102033;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    font-size: 18px;
+}
+
+.guess-input {
+    display: grid;
+    gap: 12px;
+}
+
+input, select {
+    background: white;
+    color: #172033;
+    text-align: center;
+}
+
+#message {
+    min-height: 25px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+#history {
+    display: grid;
+    gap: 10px;
+    margin: 15px 0 25px;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 9px;
+    background: #ffffff18;
+}
+
+.result {
+    color: #4ade80;
+    font-weight: bold;
+}
+
+#restartButton {
+    background: #a78bfa;
+}
+
+[hidden] {
+    display: none !important;
+}
